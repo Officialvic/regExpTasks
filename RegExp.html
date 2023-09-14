@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #111330;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            margin: 2.3rem 5.5rem;
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 3.3rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            border: 2px solid #fff;
+            font-size: 1.2rem;
+            padding: 1.1rem;
+            border-radius: 10px;
+        }
+
+        #games {
+            margin-top: 4.2rem;
+        }
+
+        .games_container {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .game {
+            background: #fff;
+            height: 200px;
+            padding: 3.2rem;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        button {
+            background-color: #111330;
+            padding: 10px;
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <section class="container">
+        <h1>
+            Word Game
+            <br>
+            <a href="#games">Get Started</a>
+        </h1>    
+    </section>
+    <main id="games">
+        <div class="games_container">
+            <div class="game">
+                carCat Search <br>
+                <button onclick="carCat()">Start game</button>
+            </div>
+            <div class="game">
+                popProp Search <br>
+                <button onclick="popProp()">Start game</button>
+            </div>
+            <div class="game">
+                fer Search <br>
+                <button onclick="fer()">Start game</button>
+            </div>
+            <div class="game">
+                ious Search <br>
+                <button onclick="ious()">Start game</button>
+            </div>
+            <div class="game">
+                whiteSpace Search <br>
+                <button onclick="whiteSpace()">Start game</button>
+            </div>
+            <div class="game">
+                sixLettersOrMore Search <br>
+                <button onclick="sixLettersOrMore()">Start game</button>
+            </div>
+        </div>
+    </main>
+
 
     <script src="script.js"></script>
 </body>
